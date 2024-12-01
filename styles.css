@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(0deg, rgb(122, 174, 223) 0%, rgb(120, 239, 221) 100%);
+}
+.calculator{
+    background-color: rgba(255, 255, 255, 0.312);
+    border-radius: 0.8rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    width: 18.75rem;
+    padding: 1.3rem;
+}
+.display{
+    background-color: rgb(76, 105, 155);
+    text-align: right;
+    color: white;
+    border-radius: 0.3rem;
+    font-size: 2.3rem;
+    padding: 0.8rem;
+    margin-bottom: 1.4rem;
+    overflow-x:auto;
+    scrollbar-color: rgb(255, 255, 255) rgb(65, 89, 132);
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+}
+.button{
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.837);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 3px 0px rgba(0, 0, 0, 0.2);
+
+}
+.button:hover{
+    background-color: rgb(236, 236, 236);
+    transform: scale(1.04);
+}
+.operator{
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(83, 88, 243);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 3px 0px rgba(0, 0, 0, 0.2);
+}
+.operator:hover{
+    background-color: rgb(55, 57, 185);
+    transform: scale(1.04);
+}
+.equal{
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(241, 131, 5);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    grid-column: span 2;
+    box-shadow: 0 3px 0px rgba(53, 103, 76, 0.2);
+}
+.equal:hover{
+    background-color:rgb(225, 123, 7);
+    transform: scale(1.04);
+}
+.plus{
+    grid-row: span 2;
+}
+
+
+button.hover {
+    background-color: rgb(236, 236, 236);
+    transform: scale(1.04);
+}
+button.equal.hover {
+    transform: scale(1.04);
+    background-color:rgb(225, 123, 7);
+}
+button.operator.hover {
+    background-color: rgb(55, 57, 185);
+    transform: scale(1.04);
+}
